@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <form name="formulario">
+        <div>
+          <label>Insira uma palavra qualquer para saber se é um palíndromo: </label>
+          <input type="text" name="palindromo"> 
+          <input type="button" value="Enviar" onclick="testar();">
+        </div>
+  
+        <script lang="javascript">
+        function testar()
+        {
+          var y;
+          y = document.formulario.palindromo.value;
+          var w = y.split(" ").join("")
+          var palavra = w.split("").reverse("").join("");
+          
+          if(w == palavra)
+          {
+            document.write(y , " é um palíndromo");
+          }
+          else
+          {
+            document.write(y , " não é um palíndromo");
+          }
+        }
+        </script>
+      </form>
+</body>
+</html>

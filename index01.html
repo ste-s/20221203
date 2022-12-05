@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <script lang="javascript">
+        var entrada1 = prompt("Digite uma palavra qualquer: ");
+        console.log(entrada1);
+  
+        var controlecol = entrada1.length
+  
+        document.writeln("Tabela dos caracteres em uma única linha: ");
+  
+        document.write("<table> <tr>");
+          for(var i = 0; i < controlecol; i++)
+          {
+            document.write("<td>");
+              document.write(entrada1.charAt(i))
+            document.write("</td>");
+          }
+        document.write("</tr> </table>");
+  
+        document.writeln("Tabela dos caracteres em uma única coluna: ");
+  
+        document.write("<table>");
+          for(var i = 0; i < controlecol; i++)
+          {
+            document.write("<tr>");
+              document.write("<td>" + entrada1.charAt(i) + "</td>")
+            document.write("</tr>");
+          }
+        document.write("</table>");
+      </script>
+</body>
+</html>
